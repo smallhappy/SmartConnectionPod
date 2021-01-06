@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Jeff Chiu" => "neonn80085@hotmail.com" }
     
   spec.platform           = :ios, "9.0"
-  spec.source             = { :http => 'file:' + __dir__ + "/" }
+  spec.source             = { :git => "https://github.com/smallhappy/SmartConnectionPod.git", :tag => "#{spec.version}" }
 
   spec.source_files       = 'SmartConnectionPod/SourceCode/**/*.{h,m,mm}'
 
