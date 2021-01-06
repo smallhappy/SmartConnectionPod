@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "SmartConnectionPod"
-  spec.version            = "0.0.1"
+  spec.version            = "1.0.0"
   spec.summary            = "小喜的私有庫"
   spec.description        = <<-DESC
   透過 SSID 、 PAWSSWORD 與 CUSTINFO 進行 SmartConnection 連線。 
