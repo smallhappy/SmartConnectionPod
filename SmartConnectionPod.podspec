@@ -27,7 +27,10 @@ Pod::Spec.new do |spec|
   spec.frameworks = 'CoreFoundation', 'SystemConfiguration'
   spec.libraries = 'SmartConnection'
   spec.vendored_libraries = 'SmartConnectionPod/Lib/libSmartConnection.a'
-
+  
+  # spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386', 'VALID_ARCHS' => 'i386' }
   # spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'VALID_ARCHS' => 'arm64', 'FRAMEWORK_SEARCH_PATHS' => 'SmartConnectionPod/Lib/libSmartConnection.a' }
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
