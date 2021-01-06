@@ -9,13 +9,13 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "SmartConnectionPod"
-  spec.version            = "1.0.1"
+  spec.version            = "1.0.2"
   spec.summary            = "小喜的私有庫"
   spec.description        = <<-DESC
   透過 SSID 、 PAWSSWORD 與 CUSTINFO 進行 SmartConnection 連線。 
                    DESC
   spec.homepage           = "https://jeff.com/SmartConnectionPod"
-  spec.license            = 'MIT'
+  spec.license            = "MIT"
   spec.author             = { "Jeff Chiu" => "neonn80085@hotmail.com" }
     
   spec.platform           = :ios, "9.0"
