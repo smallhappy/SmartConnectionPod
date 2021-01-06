@@ -15,7 +15,10 @@ Pod::Spec.new do |spec|
   透過 SSID 、 PAWSSWORD 與 CUSTINFO 進行 SmartConnection 連線。 
                    DESC
   spec.homepage           = "https://jeff.com/SmartConnectionPod"
-  spec.license            = "MIT"
+  spec.license            = "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   spec.author             = { "Jeff Chiu" => "neonn80085@hotmail.com" }
     
   spec.platform           = :ios, "9.0"
