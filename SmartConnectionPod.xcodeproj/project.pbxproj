@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F64FAD825A4BD1900343D05 /* SmartConnectionPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F64FAD625A4BD1900343D05 /* SmartConnectionPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F64FAE425A4BF3D00343D05 /* elian.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F64FAE325A4BF3D00343D05 /* elian.h */; };
+		1F64FAEB25A4C94A00343D05 /* ConnectingController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F64FAEA25A4C94A00343D05 /* ConnectingController.mm */; };
+		1F64FBA425A4D67C00343D05 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F64FBA325A4D67C00343D05 /* CoreFoundation.framework */; };
+		1F64FBA625A4D68400343D05 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F64FBA525A4D68300343D05 /* SystemConfiguration.framework */; };
+		1F64FC4125A4DFFE00343D05 /* libSmartConnection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F64FAE125A4BF2E00343D05 /* libSmartConnection.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F64FAD325A4BD1900343D05 /* SmartConnectionPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmartConnectionPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F64FAD625A4BD1900343D05 /* SmartConnectionPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartConnectionPod.h; sourceTree = "<group>"; };
+		1F64FAD725A4BD1900343D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F64FAE125A4BF2E00343D05 /* libSmartConnection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartConnection.a; sourceTree = "<group>"; };
+		1F64FAE325A4BF3D00343D05 /* elian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elian.h; sourceTree = "<group>"; };
+		1F64FAEA25A4C94A00343D05 /* ConnectingController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectingController.mm; sourceTree = "<group>"; };
+		1F64FAEE25A4C95800343D05 /* ConnectingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectingController.h; sourceTree = "<group>"; };
+		1F64FBA325A4D67C00343D05 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		1F64FBA525A4D68300343D05 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F64FAD025A4BD1900343D05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F64FBA425A4D67C00343D05 /* CoreFoundation.framework in Frameworks */,
+				1F64FBA625A4D68400343D05 /* SystemConfiguration.framework in Frameworks */,
+				1F64FC4125A4DFFE00343D05 /* libSmartConnection.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F64FAC925A4BD1900343D05 = {
+			isa = PBXGroup;
+			children = (
+				1F64FAD525A4BD1900343D05 /* SmartConnectionPod */,
+				1F64FAD425A4BD1900343D05 /* Products */,
+				1F64FBA225A4D67C00343D05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F64FAD425A4BD1900343D05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F64FAD325A4BD1900343D05 /* SmartConnectionPod.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F64FAD525A4BD1900343D05 /* SmartConnectionPod */ = {
+			isa = PBXGroup;
+			children = (
+				1F64FAE025A4BF1700343D05 /* Lib */,
+				1F64FADF25A4BF0800343D05 /* SourceCode */,
+				1F64FAD625A4BD1900343D05 /* SmartConnectionPod.h */,
+				1F64FAD725A4BD1900343D05 /* Info.plist */,
+			);
+			path = SmartConnectionPod;
+			sourceTree = "<group>";
+		};
+		1F64FADF25A4BF0800343D05 /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				1F64FAE325A4BF3D00343D05 /* elian.h */,
+				1F64FAEA25A4C94A00343D05 /* ConnectingController.mm */,
+				1F64FAEE25A4C95800343D05 /* ConnectingController.h */,
+			);
+			path = SourceCode;
+			sourceTree = "<group>";
+		};
+		1F64FAE025A4BF1700343D05 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1F64FAE125A4BF2E00343D05 /* libSmartConnection.a */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1F64FBA225A4D67C00343D05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F64FBA525A4D68300343D05 /* SystemConfiguration.framework */,
+				1F64FBA325A4D67C00343D05 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F64FACE25A4BD1900343D05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F64FAE425A4BF3D00343D05 /* elian.h in Headers */,
+				1F64FAD825A4BD1900343D05 /* SmartConnectionPod.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F64FAD225A4BD1900343D05 /* SmartConnectionPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F64FADB25A4BD1900343D05 /* Build configuration list for PBXNativeTarget "SmartConnectionPod" */;
+			buildPhases = (
+				1F64FACE25A4BD1900343D05 /* Headers */,
+				1F64FACF25A4BD1900343D05 /* Sources */,
+				1F64FAD025A4BD1900343D05 /* Frameworks */,
+				1F64FAD125A4BD1900343D05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartConnectionPod;
+			productName = SmartConnectionPod;
+			productReference = 1F64FAD325A4BD1900343D05 /* SmartConnectionPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F64FACA25A4BD1900343D05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					1F64FAD225A4BD1900343D05 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = 1F64FACD25A4BD1900343D05 /* Build configuration list for PBXProject "SmartConnectionPod" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F64FAC925A4BD1900343D05;
+			productRefGroup = 1F64FAD425A4BD1900343D05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F64FAD225A4BD1900343D05 /* SmartConnectionPod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F64FAD125A4BD1900343D05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F64FACF25A4BD1900343D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F64FAEB25A4C94A00343D05 /* ConnectingController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F64FAD925A4BD1900343D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F64FADA25A4BD1900343D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F64FADC25A4BD1900343D05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SmartConnectionPod/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartConnectionPod/Lib",
+				);
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeff.SmartConnectionPod;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F64FADD25A4BD1900343D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SmartConnectionPod/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartConnectionPod/Lib",
+				);
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeff.SmartConnectionPod;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F64FACD25A4BD1900343D05 /* Build configuration list for PBXProject "SmartConnectionPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F64FAD925A4BD1900343D05 /* Debug */,
+				1F64FADA25A4BD1900343D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F64FADB25A4BD1900343D05 /* Build configuration list for PBXNativeTarget "SmartConnectionPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F64FADC25A4BD1900343D05 /* Debug */,
+				1F64FADD25A4BD1900343D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F64FACA25A4BD1900343D05 /* Project object */;
+}
