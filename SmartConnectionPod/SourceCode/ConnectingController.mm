@@ -17,16 +17,16 @@ void *context;
     NSLog(@"㊙️ ssid: %@, password: %@, customInfo: %@", ssid, password, customInfo);
     
     if (_smartConnecting) {
-        NSLog(@"SmartConnection is running");
         _smartConnecting = NO;
+        @throw [NSException exceptionWithName:@"-10" reason:@"SmartConnection is running" userInfo:nil];
         return;
     }
     
     _smartConnecting = YES;
         
     if (![self isArgExist:ssid] || ![self isArgExist:password] || ![self isArgExist:customInfo]) {
-        NSLog(@"Data not complete");
         _smartConnecting = NO;
+        @throw [NSException exceptionWithName:@"-11" reason:@"Data not complete" userInfo:nil];
         return;
     }
     
@@ -35,8 +35,8 @@ void *context;
     
     context = elianNew(nil, 0, target, 1);
     if (nil == context) {
-        NSLog(@"LoadLib Failed");
         _smartConnecting = NO;
+        @throw [NSException exceptionWithName:@"-12" reason:@"LoadLib Failed" userInfo:nil];
         return;
     }
     
@@ -45,6 +45,8 @@ void *context;
     if (ELIAN_ERROR_CODE_OK != retValue) {
         elianDestroy(context);
         _smartConnecting = NO;
+        NSString *code = [NSString stringWithFormat:@"%d", retValue];
+        @throw [NSException exceptionWithName:code reason:@"Failed To Start Smart Connection" userInfo:nil];
         return;
     }
     
@@ -53,6 +55,8 @@ void *context;
     if (ELIAN_ERROR_CODE_OK != retValue) {
         elianDestroy(context);
         _smartConnecting = NO;
+        NSString *code = [NSString stringWithFormat:@"%d", retValue];
+        @throw [NSException exceptionWithName:code reason:@"Failed To Start Smart Connection" userInfo:nil];
         return;
     }
     
@@ -61,6 +65,8 @@ void *context;
     if (ELIAN_ERROR_CODE_OK != retValue) {
         elianDestroy(context);
         _smartConnecting = NO;
+        NSString *code = [NSString stringWithFormat:@"%d", retValue];
+        @throw [NSException exceptionWithName:code reason:@"Failed To Start Smart Connection" userInfo:nil];
         return;
     }
     
